@@ -13,3 +13,14 @@ label{
 h1{
     font-family: 'Raleway', sans-serif;
 }
+
+
+
+.jumbotron{
+    background-image: url("../images/trainschedule2.jpeg");
+    color: white
+}
+
+body{
+    margin-bottom: 20px;
+}
