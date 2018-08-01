@@ -25,7 +25,7 @@ var trainTime= $("#train-time-input").val().trim();
 var frequency= $("#frequency-input").val().trim();
 
 
-
+//Pushes input to database
 database.ref().push({
   name: trainName,
   destination: destination,
@@ -38,7 +38,7 @@ database.ref().push({
 
 database.ref().on("child_added", function(snapshot) {
 
-  
+//Capture user input from form 
 var newTrainName = snapshot.val().name;
 var newDestination = snapshot.val().destination;
 var newTrainTime = snapshot.val().firstTrainTime;
@@ -63,7 +63,7 @@ var minsAway = newFrequency - timeRemainder;
 var nextTrain = moment().add(minsAway, "minutes");
 nextTrain= moment(nextTrain).format("hh:mm");
 
-
+//Updates the trainschedule div
 $(".trainSchedule").append('<tr>\
 <td>'+ newTrainName+'</td>\
 <td>'+ newDestination + '</td>\
