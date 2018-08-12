@@ -7,4 +7,4 @@ Clone the repository to your computer and open the index.html file in your brows
 
 ## Live Link
 
-[Live Link: ](https://rfoss28.github.io/TrainSchedule/)
+[Live Link](https://rfoss28.github.io/TrainSchedule/)
